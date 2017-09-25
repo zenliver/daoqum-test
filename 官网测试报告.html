@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/libs/font-awesome.min.css">
+    <link rel="stylesheet" href="./js/libs/fancybox/2.1.6/source/jquery.fancybox.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <title>大桥化工官网测试报告</title>
+</head>
+<body>
+
+    <div id="header">
+        <h1 class="text-center">大桥化工官网测试报告</h1>
+    </div>
+
+    <div id="main">
+        <div class="container-fluid">
+
+            <!-- 前台问题 -->
+            <div class="frontend">
+                <h2 class="text-center">一、前台</h2>
+                <div class="frontend_bugs table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th style="width: 4%;">序号</th>
+                                <th style="width: 10%;">页面</th>
+                                <th style="width: 5%;">视口版本</th>
+                                <th style="width: 25%;">问题截图</th>
+                                <th style="width: 20%;">问题描述</th>
+                                <th style="width: 20%;">改进方案</th>
+                                <th style="width: 5%;">优先级</th>
+                                <th style="width: auto;">备注（改进说明）</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">所有页面</td>
+                                <td class="bug_viewport">所有版本</td>
+                                <td class="bug_screenshot"></td>
+                                <td class="bug_description">网站根域名 daoqum.com.cn 没有重定向到主域名 www.daoqum.com.cn</td>
+                                <td class="bug_solution">网站根域名 daoqum.com.cn 301重定向到主域名 www.daoqum.com.cn</td>
+                                <td class="bug_priority">中</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">所有页面</td>
+                                <td class="bug_viewport">PC</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/official_site/b1.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/official_site/b1.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">网页上很多地方的中文字体都是宋体，建议改为微软雅黑，更为美观</td>
+                                <td class="bug_solution">将页面默认字体及各页面中文字体均改为微软雅黑</td>
+                                <td class="bug_priority">低</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">所有页面</td>
+                                <td class="bug_viewport">所有版本</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/official_site/b2.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/official_site/b2.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">顶部导航logo和“首页”链接错误，应链接至"/"，而不是目前的"/index/index.html"</td>
+                                <td class="bug_solution">顶部导航logo和“首页”菜单项链接至"/"</td>
+                                <td class="bug_priority">中</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">所有页面</td>
+                                <td class="bug_viewport">所有版本</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/official_site/b3.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/official_site/b3.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">底部备案号链接错误</td>
+                                <td class="bug_solution">底部备案号链接至备案系统首页</td>
+                                <td class="bug_priority">低</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">首页</td>
+                                <td class="bug_viewport">PC</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/official_site/b4.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/official_site/b4.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">首页banner在浏览器窗口高度比较小时宽度会变小</td>
+                                <td class="bug_solution">在浏览器窗口高度比较小时，banner的宽度应保持全屏</td>
+                                <td class="bug_priority">低</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">
+                                    <a href="http://www.daoqum.com.cn/products/index.html">http://www.daoqum.com.cn/products/index.html</a>
+                                </td>
+                                <td class="bug_viewport">PC</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/official_site/b5.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/official_site/b5.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">"金树"品牌区域鼠标划过小图标后其他图标排列错乱</td>
+                                <td class="bug_solution">鼠标划过小图标后所有图标应排列整齐</td>
+                                <td class="bug_priority">高</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">所有页面</td>
+                                <td class="bug_viewport">所有版本</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/official_site/b6.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/official_site/b6.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">页面上有一些静态资源死链接，如：http://www.daoqum.com.cn/Public/home/js/jquery-1.8.0.min.js 等</td>
+                                <td class="bug_solution">去除死链接</td>
+                                <td class="bug_priority">低</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">首页</td>
+                                <td class="bug_viewport">移动版</td>
+                                <td class="bug_screenshot"></td>
+                                <td class="bug_description">移动设备下首页视频播放效果有改进空间</td>
+                                <td class="bug_solution">移动设备下首页视频播放时背景颜色建议更深，以更突出视频。另移动设备下的播放界面建议和PC下一致，视频未播放时在视频中间显示大的圆形播放按钮。</td>
+                                <td class="bug_priority">低</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">所有页面</td>
+                                <td class="bug_viewport">所有版本</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/official_site/b7.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/official_site/b7.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">网页内容文字大多为12px偏小，且跟其他标题性文字差别较大</td>
+                                <td class="bug_solution">建议默认字号增大为14px，更易阅读</td>
+                                <td class="bug_priority">低</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">
+                                    <a href="http://www.daoqum.com.cn/about/brand.html">http://www.daoqum.com.cn/about/brand.html</a>
+                                </td>
+                                <td class="bug_viewport">所有版本</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/official_site/b8.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/official_site/b8.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">“大桥旗下品牌矩阵”区域的3张图片没有对齐</td>
+                                <td class="bug_solution">此处的3张图片在水平方向应对齐</td>
+                                <td class="bug_priority">中</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">
+                                    <a href="http://www.daoqum.com.cn/about/resp.html">http://www.daoqum.com.cn/about/resp.html</a> <br><br>
+                                    <a href="http://www.daoqum.com.cn/about/organ.html">http://www.daoqum.com.cn/about/organ.html</a>
+                                </td>
+                                <td class="bug_viewport">所有版本</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/official_site/b9.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/official_site/b9.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">
+                                    “企业责任”和“组织架构”这两个页面缺少内容标题
+                                </td>
+                                <td class="bug_solution">建议跟“发展历程”等相邻栏目一样加上字号较大的内容标题</td>
+                                <td class="bug_priority">中</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">
+                                    1、 <br>
+                                    <a href="http://www.daoqum.com.cn/about/resp.html">http://www.daoqum.com.cn/about/resp.html</a> <br><br>
+                                    <a href="http://www.daoqum.com.cn/about/organ.html">http://www.daoqum.com.cn/about/organ.html</a> <br><br>
+                                    及其他所有相邻栏目页面 <br><br>
+                                    2、 <br>
+                                    <a href="http://www.daoqum.com.cn/advantage/technology.html">http://www.daoqum.com.cn/advantage/technology.html</a> <br><br>
+                                    <a href="http://www.daoqum.com.cn/advantage/quali.html">http://www.daoqum.com.cn/advantage/quali.html</a> <br><br>
+                                    及其他所有相邻栏目页面
+                                </td>
+                                <td class="bug_viewport">移动版</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/official_site/b10.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/official_site/b10.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">
+                                    1、手机下分类导航是用左右滑动的方式来切换，略有不便，且当页面是“企业责任”和“组织架构”时这两个小标题无法完全显示或不显示。 <br>
+                                    2、手机和pad竖屏下不显示面包屑导航。
+                                </td>
+                                <td class="bug_solution">
+                                    1、手机下分类导航建议全部显示出来。<br>
+                                    2、手机和pad竖屏下显示面包屑导航。
+                                </td>
+                                <td class="bug_priority">低</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">
+                                    <a href="http://www.daoqum.com.cn/advantage/achievement.html">http://www.daoqum.com.cn/advantage/achievement.html</a>
+                                </td>
+                                <td class="bug_viewport">PC</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/official_site/b11.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/official_site/b11.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">“参与制定行业、地方标准”此处的3张图片并无链接或特殊效果，鼠标划过后却显示手型</td>
+                                <td class="bug_solution">去除鼠标手型</td>
+                                <td class="bug_priority">低</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">
+                                    <a href="http://www.daoqum.com.cn/products/info.html?id=41&type=1&classid=12">http://www.daoqum.com.cn/products/info.html?id=41&type=1&classid=12</a>等所有产品栏目子页面
+                                </td>
+                                <td class="bug_viewport">所有版本</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/official_site/b12.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/official_site/b12.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">此处的3个导航直接链接到产品栏目首页</td>
+                                <td class="bug_solution">此处的3个导航链接应加上相应的锚链，如"/products/index.html#39"</td>
+                                <td class="bug_priority">中</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">
+                                    <a href="http://daoqum.com.cn/career/career/id/53.html">http://daoqum.com.cn/career/career/id/53.html</a> <br><br>
+                                    <a href="http://daoqum.com.cn/career/career/id/55.html">http://daoqum.com.cn/career/career/id/55.html</a>
+                                </td>
+                                <td class="bug_viewport">所有版本</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/official_site/b16.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/official_site/b16.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">死链接（404错误页面）:面包屑导航中“人力资源”链接错误</td>
+                                <td class="bug_solution">修复</td>
+                                <td class="bug_priority">高</td>
+                                <td class="bug_update"></td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 后台问题 -->
+            <div class="backend">
+                <h2 class="text-center">二、后台</h2>
+                <div class="backend_bugs table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th style="width: 4%;">序号</th>
+                                <th style="width: 10%;">页面</th>
+                                <th style="width: 5%;">视口版本</th>
+                                <th style="width: 25%;">问题截图</th>
+                                <th style="width: 20%;">问题描述</th>
+                                <th style="width: 20%;">改进方案</th>
+                                <th style="width: 5%;">优先级</th>
+                                <th style="width: auto;">备注（改进说明）</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">所有页面</td>
+                                <td class="bug_viewport">PC</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/official_site/b13.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/official_site/b13.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">在很多尺寸的浏览器窗口下后台右侧区域会折行显示到左侧下面去（测试环境：显示器分辨率1920x1080，屏幕缩放125%，浏览器Chrome 60.0）</td>
+                                <td class="bug_solution">修复这个bug</td>
+                                <td class="bug_priority">高</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">单页面信息管理列表页面</td>
+                                <td class="bug_viewport">PC</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/official_site/b14.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/official_site/b14.png" alt="" class="img-responsive">
+                                    </a> <br>
+                                    <a href="./images/official_site/b15.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/official_site/b15.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">内容筛选功能有问题，无法正确筛选内容</td>
+                                <td class="bug_solution">修复这个bug</td>
+                                <td class="bug_priority">高</td>
+                                <td class="bug_update"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <!-- js -->
+    <script src="./js/libs/jquery-1.12.4.min.js" charset="utf-8"></script>
+    <script src="./js/libs/fancybox/2.1.6/source/jquery.fancybox.pack.js" charset="utf-8"></script>
+    <script src="./js/site.js" charset="utf-8"></script>
+
+</body>
+</html>

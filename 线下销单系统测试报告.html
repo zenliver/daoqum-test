@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/libs/font-awesome.min.css">
+    <link rel="stylesheet" href="./js/libs/fancybox/2.1.6/source/jquery.fancybox.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <title>线下销单系统测试报告</title>
+</head>
+<body>
+
+    <div id="header">
+        <h1 class="text-center">线下销单系统测试报告</h1>
+    </div>
+
+    <div id="main">
+        <div class="container-fluid">
+
+            <!-- 后台问题 -->
+            <div class="backend">
+                <h2 class="text-center">后台</h2>
+                <div class="backend_bugs table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th style="width: 4%;">序号</th>
+                                <th style="width: 10%;">页面</th>
+                                <th style="width: 5%;">视口版本</th>
+                                <th style="width: 25%;">问题截图</th>
+                                <th style="width: 20%;">问题描述</th>
+                                <th style="width: 20%;">改进方案</th>
+                                <th style="width: 5%;">优先级</th>
+                                <th style="width: auto;">备注（改进说明）</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">所有页面</td>
+                                <td class="bug_viewport">PC</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/xdxt/b1.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/xdxt/b1.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">页面上部分区域中文字体是宋体，不够美观</td>
+                                <td class="bug_solution">建议网页默认中文字体使用微软雅黑，更为美观</td>
+                                <td class="bug_priority">低</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">所有页面</td>
+                                <td class="bug_viewport">PC</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/xdxt/b2.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/xdxt/b2.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">页面上部分区域字号是12px，偏小</td>
+                                <td class="bug_solution">建议改为14px，更易于阅读</td>
+                                <td class="bug_priority">低</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">后台所有内页</td>
+                                <td class="bug_viewport">PC</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/xdxt/b3.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/xdxt/b3.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">后台内页导航不够清晰，操作者易迷失位置，不知道当前是在哪一个大类下面。</td>
+                                <td class="bug_solution">
+                                    左侧的子分类导航中当前页面所属的大类应自动展开，将左侧固定或者右侧内容放入框架（iframe）。
+                                </td>
+                                <td class="bug_priority">高</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">后台所有内页</td>
+                                <td class="bug_viewport">PC</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/xdxt/b9.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/xdxt/b9.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">左侧导航大类展开后无法点击关闭</td>
+                                <td class="bug_solution">左侧导航大类展开后应可以再次点击关闭</td>
+                                <td class="bug_priority">中</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">
+                                    <a href="http://sz7.ni8.com/dqsj/member/abundance.php">http://sz7.ni8.com/dqsj/member/abundance.php</a> <br><br>
+                                    <a href="http://sz7.ni8.com/dqsj/member/return_order.php">http://sz7.ni8.com/dqsj/member/return_order.php</a> <br><br>
+                                    <a href="http://sz7.ni8.com/dqsj/member/minister.php">http://sz7.ni8.com/dqsj/member/minister.php</a> <br><br>
+                                    <a href="http://sz7.ni8.com/dqsj/member/create.php">http://sz7.ni8.com/dqsj/member/create.php</a> 等所有涉及到批量操作的界面
+                                </td>
+                                <td class="bug_viewport">PC</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/xdxt/b4.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/xdxt/b4.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">"全选"功能未实现</td>
+                                <td class="bug_solution">实现</td>
+                                <td class="bug_priority">高</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">后台所有内页</td>
+                                <td class="bug_viewport">PC</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/xdxt/b5.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/xdxt/b5.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">当前页面在左侧导航中的链接没有突出显示的效果（active效果）</td>
+                                <td class="bug_solution">添加突出显示的效果（active效果）</td>
+                                <td class="bug_priority">高</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">
+                                    <a href="http://sz7.ni8.com/dqsj/member/create.php">http://sz7.ni8.com/dqsj/member/create.php</a> <br><br>
+                                    <a href="http://sz7.ni8.com/dqsj/member/bind.php">http://sz7.ni8.com/dqsj/member/bind.php</a>
+                                </td>
+                                <td class="bug_viewport">PC</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/xdxt/b6.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/xdxt/b6.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">删除或停用一个项目之前没有确认提示</td>
+                                <td class="bug_solution">删除或停用一个项目时应弹出确认提示，以减少误操作。</td>
+                                <td class="bug_priority">中</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">
+                                    <a href="http://sz7.ni8.com/dqsj/member/manage_show.php">http://sz7.ni8.com/dqsj/member/manage_show.php</a>
+                                </td>
+                                <td class="bug_viewport">PC</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/xdxt/b7.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/xdxt/b7.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">点击父权限不能全部选中子权限</td>
+                                <td class="bug_solution">点击父权限应全部选中子权限</td>
+                                <td class="bug_priority">高</td>
+                                <td class="bug_update"></td>
+                            </tr>
+                            <tr>
+                                <td class="bug_index"></td>
+                                <td class="bug_page">
+                                    <a href="http://sz7.ni8.com/dqsj/member/indeed.php">http://sz7.ni8.com/dqsj/member/indeed.php</a>
+                                </td>
+                                <td class="bug_viewport">PC</td>
+                                <td class="bug_screenshot">
+                                    <a href="./images/xdxt/b8.png" class="fancybox" data-fancybox-group="gallery" title="">
+                                        <img src="./images/xdxt/b8.png" alt="" class="img-responsive">
+                                    </a>
+                                </td>
+                                <td class="bug_description">“复制链接”按钮代码错误，且未实现点击复制链接的功能</td>
+                                <td class="bug_solution">修复这个问题</td>
+                                <td class="bug_priority">高</td>
+                                <td class="bug_update"></td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <!-- js -->
+    <script src="./js/libs/jquery-1.12.4.min.js" charset="utf-8"></script>
+    <script src="./js/libs/fancybox/2.1.6/source/jquery.fancybox.pack.js" charset="utf-8"></script>
+    <script src="./js/site.js" charset="utf-8"></script>
+
+</body>
+</html>

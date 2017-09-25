@@ -1,0 +1,31 @@
+/*大桥化工测试*/
+#__bs_notify__ {
+  display: none !important;
+}
+body {
+  font-family: Arial, "Microsoft YaHei";
+  /*background-color: #f7f7f7;*/
+}
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.img-responsive {
+  margin-left: auto;
+  margin-right: auto;
+}
+.table > thead > tr > th {
+  vertical-align: middle;
+}
+
+#header {
+  background-color: #fff;
+}
+.bug_page {
+    word-break: break-all;
+}
